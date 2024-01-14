@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário de inscrição para o congresso</title>
+        <!-- Adicionando o link para o arquivo CSS externo -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- Adicionando o link para o Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      </head>
+      <body>
+        <form method="POST" action="cadastro.php">
+          <h1>Formulário de inscrição para o congresso</h1>
+          <p>Preencha os campos abaixo e clique em enviar.</p>
+          <label for="nome"><i class="fas fa-user"></i> Nome completo:</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required><br>
+      
+          <label for="fone"><i class="fas fa-phone"></i> Telefone:</label>
+          <input type="tel" id="fone" name="fone" placeholder="Digite seu telefone" required><br>
+      
+          <label for="pastor"><i class="fas fa-church"></i> Nome do seu pastor:</label>
+          <input type="text" id="pastor" name="pastor" placeholder="Digite o nome do seu pastor" required><br>
+      
+          <label for="igreja"><i class="fas fa-cross"></i> Nome da igreja que você congrega:</label>
+          <input type="text" id="igreja" name="igreja" placeholder="Digite o nome da igreja que você congrega" required><br>
+      
+          <label for="cidade"><i class="fas fa-map-marker-alt"></i> Cidade em que você congrega:</label>
+          <input type="text" id="cidade" name="cidade" placeholder="Digite a cidade em que você congrega" required><br>
+      
+          <label for="camisa"><i class="fas fa-tshirt"></i> Tamanho da camisa:</label>
+          <select id="camisa" name="camisa">
+            <option value="p">P</option>
+            <option value="m">M</option>
+            <option value="g">G</option>
+            <option value="gg">GG</option>
+            <option value="exg">EXG</option>
+            <option value="exgg">EXGG</option>
+            <option value="nao">Não vou querer a camisa</option>
+          </select><br>
+      
+          <label for="observacao"><i class="fas fa-comment"></i> Observação:</label>
+          <textarea id="observacao" name="observacao" placeholder="Digite sua observação" rows="5"></textarea><br>
+      
+          <input type="submit" value="Enviar" id="enviar" name="enviar">
+        </form>
+      </body>
+      </html>
+      
